@@ -1,0 +1,14 @@
+.logout-container {
+    text-align: center;
+    margin-top: 20%;
+    font-family: Arial, sans-serif;
+}
+
+h2 {
+    color: #ff4d4d;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}

@@ -1,0 +1,113 @@
+
+
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #f5efe6; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center;
+    background-size: cover;
+    color: white;
+}
+
+
+.login-container {
+    background: #fffdf7; 
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+    border: 3px solid #8b5e3b; 
+}
+
+
+h2 {
+    color: #5a3825;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5a3825;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #8b5e3b;
+    border-radius: 4px;
+    background-color: #fffaf0;
+    font-size: 16px;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.options label {
+    color: #5a3825;
+    font-weight: bold;
+}
+
+.options a {
+    text-decoration: none;
+    color: #8b5e3b;
+    font-weight: bold;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #8b5e3b; 
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background-color: #5a3825;
+}
+
+
+.register-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #8b5e3b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

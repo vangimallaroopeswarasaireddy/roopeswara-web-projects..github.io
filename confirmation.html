@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation | VRSR Bookstore</title>
+    <link rel="stylesheet" href="confirmation.css">
+</head>
+<body>
+    <header>
+        <div class="logo">VRSR Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="book login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="confirmation-container">
+        <div class="success-message">
+            <div class="checkmark">✓</div>
+            <h1>Order Confirmed!</h1>
+            <p>Thank you for your purchase. Your order has been successfully placed.</p>
+        </div>
+
+        <div class="order-details">
+            <h2>Order Details</h2>
+            <div class="order-info">
+                <p><strong>Order ID:</strong> <span id="order-id"></span></p>
+                <p><strong>Order Date:</strong> <span id="order-date"></span></p>
+                <p><strong>Delivery Address:</strong> <span id="delivery-address"></span></p>
+                <p><strong>Phone Number:</strong> <span id="phone-number"></span></p>
+            </div>
+
+            <div class="order-items">
+                <h3>Order Items</h3>
+                <div id="order-items-list"></div>
+            </div>
+
+            <div class="order-summary">
+                <div class="summary-row">
+                    <span>Subtotal:</span>
+                    <span>₹<span id="subtotal">0</span></span>
+                </div>
+                <div class="summary-row">
+                    <span>Shipping:</span>
+                    <span>₹<span id="shipping">0</span></span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total Amount:</span>
+                    <span>₹<span id="total-amount">0</span></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="next-steps">
+            <h3>What's Next?</h3>
+            <p>You will receive an email confirmation with your order details shortly.</p>
+            <p>Estimated delivery time: 3-5 business days</p>
+        </div>
+
+        <div class="action-buttons">
+            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+            <a href="profile.html" class="view-orders">View Orders</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VRSR Bookstore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="confirmation.js"></script>
+</body>
+</html> 

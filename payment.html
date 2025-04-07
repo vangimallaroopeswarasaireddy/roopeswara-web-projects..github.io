@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | VRSR Bookstore</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">VRSR Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="book login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="payment-container">
+        <h2>Payment Details</h2>
+        <div class="order-summary">
+            <h3>Order Summary</h3>
+            <div id="order-items"></div>
+            <div class="total">
+                <h4>Total Amount: ₹<span id="total-price">0</span></h4>
+            </div>
+        </div>
+
+        <form id="payment-form" class="payment-form">
+            <div class="form-group">
+                <label for="card-name">Cardholder Name</label>
+                <input type="text" id="card-name" required placeholder="Enter cardholder name">
+            </div>
+
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" required placeholder="1234 5678 9012 3456" maxlength="19">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" required placeholder="MM/YY" maxlength="5">
+                </div>
+                <div class="form-group">
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" required placeholder="123" maxlength="4">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Delivery Address</label>
+                <textarea id="address" required placeholder="Enter your delivery address"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" required placeholder="Enter your phone number">
+            </div>
+
+            <button type="submit" class="pay-button">Pay Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VRSR Bookstore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="payment.js"></script>
+</body>
+</html> 

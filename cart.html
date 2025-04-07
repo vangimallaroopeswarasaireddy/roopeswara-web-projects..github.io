@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | VRSR Bookstore</title>
+    <link rel="stylesheet" href="cart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">VRSR Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="cart.html" class="active">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="book login.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="cart-container">
+        <h2>Your Shopping Cart</h2>
+        <div id="cart-items">
+            <p class="empty-cart">Your cart is empty! Start adding books.</p>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Total: ₹<span id="total-price">0</span></h3>
+            <button id="checkout-btn" disabled>Proceed to Payment</button>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 VRSR Bookstore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>

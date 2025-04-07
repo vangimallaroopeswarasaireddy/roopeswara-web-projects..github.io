@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRSR Bookstore</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">VRSR Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Shop</a></li>
+                <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="book login.html" target="_blank">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Discover Your Next Favorite Book</h1>
+        <p>Wide Collection of Bestsellers, Classics, and New Arrivals</p>
+    </section>
+
+    <section id="items">
+        <h2>Browse Our Collection</h2>
+        <div class="items-container">
+
+            <div class="item" data-name="Atomic Habits" data-price="499">
+                <img src="https://m.media-amazon.com/images/I/81IL8Dy4vmL._SL1500_.jpg" alt="Atomic Habits">
+                <h3>Atomic Habits</h3>
+                <p>By James Clear</p>
+                <p>₹499</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Alchemist" data-price="399">
+                <img src="https://m.media-amazon.com/images/I/71EwoNQypZL.jpg" alt="The Alchemist">
+                <h3>The Alchemist</h3>
+                <p>By Paulo Coelho</p>
+                <p>₹399</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Rich Dad Poor Dad" data-price="450">
+                <img src="https://m.media-amazon.com/images/I/61Iz2yy2CKL.jpg" alt="Rich Dad Poor Dad">
+                <h3>Rich Dad Poor Dad</h3>
+                <p>By Robert Kiyosaki</p>
+                <p>₹450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Ikigai" data-price="520">
+                <img src="https://m.media-amazon.com/images/I/71cRwWclCvL._SL1500_.jpg" alt="Ikigai">
+                <h3>Ikigai</h3>
+                <p>By Hector Garcia</p>
+                <p>₹520</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Ikigai" data-price="520">
+                <img src="https://m.media-amazon.com/images/I/71ONWR6eXDL._SL1500_.jpg" alt="The Power of Habit">
+                <h3>The Power of Habit</h3>
+                <p>By Charles Duhigg</p>
+                <p>₹480</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Deep Work" data-price="550">
+                <img src="https://m.media-amazon.com/images/I/71din4TLubL._SL1500_.jpg" alt="Deep Work">
+                <h3>Deep Work</h3>
+                <p>By Cal Newport</p>
+                <p>₹550</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Subtle Art of Not Giving a F*ck" data-price="430">
+                <img src="https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg" alt="The Subtle Art of Not Giving a F*ck">
+                <h3>The Subtle Art of Not Giving a F*ck</h3>
+                <p>By Mark Manson</p>
+                <p>₹430</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Think and Grow Rich" data-price="350">
+                <img src="https://m.media-amazon.com/images/I/61IxJuRI39L.jpg" alt="Think and Grow Rich">
+                <h3>Think and Grow Rich</h3>
+                <p>By Napoleon Hill</p>
+                <p>₹350</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The 5 AM Club" data-price="490">
+                <img src="https://m.media-amazon.com/images/I/71Jg6kSgYwL._SL1500_.jpg" alt="The 5 AM Club">
+                <h3>The 5 AM Club</h3>
+                <p>By Robin Sharma</p>
+                <p>₹490</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            
+            <div class="item" data-name="Can't Hurt Me" data-price="699">
+                <img src="https://m.media-amazon.com/images/I/81gTRv2HXrL._SL1500_.jpg" alt="Can't Hurt Me">
+                <h3>Can't Hurt Me</h3>
+                <p>By David Goggins</p>
+                <p>₹699</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Catcher in the Rye" data-price="300">
+                <img src="https://m.media-amazon.com/images/I/81OthjkJBuL.jpg" alt="The Catcher in the Rye">
+                <h3>The Catcher in the Rye</h3>
+                <p>By J.D. Salinger</p>
+                <p>₹300</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="To Kill a Mockingbird" data-price="350">
+                <img src="https://m.media-amazon.com/images/I/81gepf1eMqL.jpg" alt="To Kill a Mockingbird">
+                <h3>To Kill a Mockingbird</h3>
+                <p>By Harper Lee</p>
+                <p>₹350</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="1984" data-price="400">
+                <img src="https://m.media-amazon.com/images/I/71kxa1-0mfL.jpg" alt="1984">
+                <h3>1984</h3>
+                <p>By George Orwell</p>
+                <p>₹400</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Pride and Prejudice" data-price="320">
+                <img src="https://m.media-amazon.com/images/I/81WYkFpBxyL._SY425_.jpg" alt="Pride and Prejudice">
+                <h3>Pride and Prejudice</h3>
+                <p>By Jane Austen</p>
+                <p>₹320</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Great Gatsby" data-price="450">
+                <img src="https://m.media-amazon.com/images/I/81af+MCATTL.jpg" alt="The Great Gatsby">
+                <h3>The Great Gatsby</h3>
+                <p>By F. Scott Fitzgerald</p>
+                <p>₹450</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Moby Dick" data-price="500">
+                <img src="https://m.media-amazon.com/images/I/81JptuqfQWL._SL1500_.jpg" alt="Moby Dick">
+                <h3>Moby Dick</h3>
+                <p>By Herman Melville</p>
+                <p>₹500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="War and Peace" data-price="600">
+                <img src="https://m.media-amazon.com/images/I/71eK3ri8ROL._SL1000_.jpg" alt="War and Peace">
+                <h3>War and Peace</h3>
+                <p>By Leo Tolstoy</p>
+                <p>₹600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Crime and Punishment" data-price="550">
+                <img src="https://m.media-amazon.com/images/I/81HfjUHAIyL._SL1500_.jpg" alt="Crime and Punishment">
+                <h3>Crime and Punishment</h3>
+                <p>By Fyodor Dostoevsky</p>
+                <p>₹550</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Brothers Karamazov" data-price="700">
+                <img src="https://m.media-amazon.com/images/I/71OZJsgZzQL._SL1500_.jpg" alt="The Brothers Karamazov">
+                <h3>The Brothers Karamazov</h3>
+                <p>By Fyodor Dostoevsky</p>
+                <p>₹700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Anna Karenina" data-price="650">
+                <img src="https://m.media-amazon.com/images/I/71O3PTUA3vL._SL1400_.jpg" alt="Anna Karenina">
+                <h3>Anna Karenina</h3>
+                <p>By Leo Tolstoy</p>
+                <p>₹650</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Hobbit" data-price="400">
+                <img src="https://m.media-amazon.com/images/I/81mCE+uclxL._SL1500_.jpg" alt="The Hobbit">
+                <h3>The Hobbit</h3>
+                <p>By J.R.R. Tolkien</p>
+                <p>₹400</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Lord of the Rings" data-price="1200">
+                <img src="https://m.media-amazon.com/images/I/7125+5E40JL._SL1500_.jpg" alt="The Lord of the Rings">
+                <h3>The Lord of the Rings</h3>
+                <p>By J.R.R. Tolkien</p>
+                <p>₹1200</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Sorcerer's Stone" data-price="500">
+                <img src="https://m.media-amazon.com/images/I/81DI+BAN2SL._SL1200_.jpg" alt="Harry Potter and the Sorcerer's Stone">
+                <h3>Harry Potter and the Sorcerer's Stone</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹500</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Chamber of Secrets" data-price="550">
+                <img src="https://m.media-amazon.com/images/I/818umIdoruL._SL1500_.jpg" alt="Harry Potter and the Chamber of Secrets">
+                <h3>Harry Potter and the Chamber of Secrets</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹550</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Prisoner of Azkaban" data-price="600">
+                <img src="https://m.media-amazon.com/images/I/81NQA1BDlnL._SL1500_.jpg" alt="Harry Potter and the Prisoner of Azkaban">
+                <h3>Harry Potter and the Prisoner of Azkaban</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹600</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Goblet of Fire" data-price="650">
+                <img src="https://m.media-amazon.com/images/I/81zeKRGCPpL._SL1500_.jpg" alt="Harry Potter and the Goblet of Fire">
+                <h3>Harry Potter and the Goblet of Fire</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹650</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Order of the Phoenix" data-price="700">
+                <img src="https://m.media-amazon.com/images/I/71pgI2ou5oL._SL1200_.jpg" alt="Harry Potter and the Order of the Phoenix">
+                <h3>Harry Potter and the Order of the Phoenix</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Half-Blood Prince" data-price="750">
+                <img src="https://m.media-amazon.com/images/I/81DN1723hUL._SL1500_.jpg" alt="Harry Potter and the Half-Blood Prince">
+                <h3>Harry Potter and the Half-Blood Prince</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹750</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Harry Potter and the Deathly Hallows" data-price="800">
+                <img src="https://m.media-amazon.com/images/I/81aCMT1zKtL._SL1500_.jpg" alt="Harry Potter and the Deathly Hallows">
+                <h3>Harry Potter and the Deathly Hallows</h3>
+                <p>By J.K. Rowling</p>
+                <p>₹800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Chronicles of Narnia" data-price="850">
+                <img src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1661032875i/11127.jpg" alt="The Chronicles of Narnia">
+                <h3>The Chronicles of Narnia</h3>
+                <p>By C.S. Lewis</p>
+                <p>₹850</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Percy Jackson & The Olympians" data-price="700">
+                <img src="https://m.media-amazon.com/images/I/91YMTyxpWLL._SL1500_.jpg" alt="Percy Jackson & The Olympians">
+                <h3>Percy Jackson & The Olympians</h3>
+                <p>By Rick Riordan</p>
+                <p>₹700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Hunger Games" data-price="750">
+                <img src="https://m.media-amazon.com/images/I/61I24wOsn8L._SL1200_.jpg" alt="The Hunger Games">
+                <h3>The Hunger Games</h3>
+                <p>By Suzanne Collins</p>
+                <p>₹750</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Divergent" data-price="800">
+                <img src="https://m.media-amazon.com/images/I/91oNu+R7EUL._SL1500_.jpg" alt="Divergent">
+                <h3>Divergent</h3>
+                <p>By Veronica Roth</p>
+                <p>₹800</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="The Maze Runner" data-price="650">
+                <img src="https://m.media-amazon.com/images/I/91eFtQ2a9tL._SL1500_.jpg" alt="The Maze Runner">
+                <h3>The Maze Runner</h3>
+                <p>By James Dashner</p>
+                <p>₹650</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-name="Twilight" data-price="700">
+                <img src="https://m.media-amazon.com/images/I/81nTx+DbY-L._SL1500_.jpg" alt="Twilight">
+                <h3>Twilight</h3>
+                <p>By Stephenie Meyer</p>
+                <p>₹700</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <a href="about.html">About Us</a><br>
+                <a href="career.html" target="_blank">Career</a><br>
+                <a href="blog.html" target="_blank">Blog</a><br>
+                <a href="https://youtu.be/W61RodRVO2Y?si=vh1Mh-F1FXHEmWhm" target="_blank">YT Featured Video</a><br>
+                <a href="contact.html" target="_blank">Contact Us</a>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Policies</h4>
+                <a href="privacy.html" target="_blank">Privacy Policies</a><br>
+                <a href="terms.html" target="_blank">Terms of Use</a><br>
+                <a href="secure-shopping.html" >Secure Shopping</a><br>
+                <a href="copyright.html">Copyright Policy</a><br>
+                <a href="cookie-policy.html">Cookie Policy</a>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Help</h4>
+                <a href="payment.html">Payment</a><br>
+                <a href="#">Shipping</a><br>
+                <a href="#">Return</a><br>
+                <a href="#">FAQ</a>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Misc</h4>
+                <a href="#">Affiliate</a><br>
+                <a href="#">Sitemap</a>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Download Our App</h4>
+                <div class="app-download">
+                    <a class="footer-section social-icons" href="#"><img src="google-play.png" alt="Get it on Google Play"></a>
+                </div>
+            </div>
+    
+            <div class="footer-section social-icons">
+                <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="pinterest.png" alt="Pinterest"></a>
+                <a href="#"><img src="instagram.png" alt="Instagram"></a>
+            </div>
+    
+            <p>&copy; 2025 VRSR Bookstore. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+    </body>
+</html>

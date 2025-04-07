@@ -1,0 +1,178 @@
+
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f8f1e4; 
+    color: #3e2723; 
+}
+
+
+header {
+    background: #5a3825; 
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+        font-family: "Boldonse", system-ui;
+        font-weight: 500;
+        font-style: normal;
+      }
+nav ul {
+    font-family: "Boldonse", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+.hero h1, .hero p {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.hero h1 {
+    animation-delay: 0.2s;
+}
+
+.hero p {
+    animation-delay: 0.4s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    transition: transform 0.3s ease;
+}
+
+.item:hover img {
+    transform: scale(1.1);
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1512820790803-83ca734da794') no-repeat center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+
+.items-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    background: #fffaf5; 
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 220px;
+    text-align: center;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+h3 {
+    color: #5d4037; 
+}
+
+
+button {
+    background: #b71c1c; 
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #8e0000; 
+}
+
+
+#cart ul {
+    list-style: none;
+    padding: 0;
+}
+#cart button {
+    margin-top: 10px;
+}
+footer {
+    background: #333;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+    font-family: "Boldonse", system-ui;
+    font-weight: 500;
+    font-style: normal;
+}
+.footer-section {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+}
+.footer-section a {
+    color: #fdfdfd;
+}
+.footer h4 {
+    color: rgb(255, 255, 255);
+    font-family: "Boldonse", system-ui;
+        font-weight: 500;
+        font-style: normal;
+}
+.app-download {
+    margin-top: 10px;
+}
+.social-icons img {
+    width: 24px;
+    margin: 0 5px;
+}
