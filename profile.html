@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile | VRSR Bookstore</title>
+    <link rel="stylesheet" href="profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo">VRSR Bookstore</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Shop</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="logout.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="edit-profile-container">
+        <h2>Edit Profile</h2>
+
+        <form id="edit-profile-form">
+            <div class="profile-pic-container">
+                <img id="profile-preview" src="https://i.pinimg.com/474x/e0/fe/f4/e0fef45fe2e92ba0d6a423b210a3eba4.jpg" alt="Profile Picture">
+                <input type="file" id="profile-pic" accept="image/*">
+            </div>
+
+            <div class="input-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" placeholder="Enter 10-digit mobile number" required>
+            </div>
+
+            <div class="input-group">
+                <label for="address">Address</label>
+                <textarea id="address" name="address" rows="4" placeholder="Enter your address" required></textarea>
+            </div>
+
+            <button type="submit" class="save-btn">Save Changes</button>
+            <a href="profile.html" class="cancel-btn">Cancel</a>
+        </form>
+
+        <div class="profile-table-container">
+            <h2>Profile Details</h2>
+            <table id="profileTable">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Mobile Number</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 VRSR Bookstore. All Rights Reserved.</p>
+    </footer>
+
+    <script src="profile.js"></script>
+
+</body>
+</html>
